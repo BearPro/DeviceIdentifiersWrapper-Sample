@@ -1,9 +1,7 @@
-package com.zebra.emdk_deviceidentifiers_sample;
+package com.zebra.emdk_deviceidentifiers_sample2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -55,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
          DIHelper.getSerialNumber(this, new IDIResultCallbacks() {
              @Override
              public void onSuccess(String message) {
+                 Log.d("MS-SERIAL", "SUCCESS :: " + message);
                  updateTextViewContent(tvSerialNumber, message);
                  // We got the serial number, let's try the IMEI number
                  getIMEINumber();
@@ -62,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
              @Override
              public void onError(String message) {
+                 Log.d("MS-SERIAL", "ERROR :: " + message);
                  addMessageToStatusText(message);
                  // We had an error, but we like to play, so we try the IMEI Number
                  getIMEINumber();
@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
              @Override
              public void onDebugStatus(String message) {
+                 Log.d("MS-SERIAL", "DEBUG :: " + message);
                  addMessageToStatusText(message);
              }
          });

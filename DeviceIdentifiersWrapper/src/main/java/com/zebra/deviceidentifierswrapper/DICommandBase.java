@@ -2,8 +2,6 @@ package com.zebra.deviceidentifierswrapper;
 
 import android.content.Context;
 import android.os.Handler;
-import android.os.Parcel;
-import android.os.ResultReceiver;
 
 /**
  * Created by Trudu Laurent on 2020/08/11.

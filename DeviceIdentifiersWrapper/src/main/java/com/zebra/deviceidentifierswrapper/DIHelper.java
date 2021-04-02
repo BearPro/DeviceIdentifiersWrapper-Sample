@@ -1,15 +1,8 @@
 package com.zebra.deviceidentifierswrapper;
 
 import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.content.pm.Signature;
-import android.database.Cursor;
 import android.net.Uri;
-import android.os.AsyncTask;
-import android.util.Log;
-
-import java.util.Base64;
 
 public class DIHelper {
 

@@ -1,7 +1,6 @@
 package com.zebra.deviceidentifierswrapper;
 
 import android.content.Context;
-import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Xml;
